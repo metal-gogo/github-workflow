@@ -1,0 +1,18 @@
+@import 'settings/variables';
+@import 'tools/mixins/import_once';
+
+@include import_once('objects/main-cta') {
+  .main-cta {
+    padding: 16px 32px;
+    border-radius: 6px;
+    border: none;
+    background-color: darken($sunflower, 10%);
+    color: $white;
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus,
+    &:hover {
+      background-color: $sunflower;
+    }
+  }
+}

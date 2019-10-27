@@ -78,3 +78,18 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
   * [ESLint](https://eslint.org/).- A pluggable linting utility for JavaScript.
   * [Prettier](https://prettier.io/).- An opinionated code formatter to help me follow my ESLint rules.
 3. I love emojis, so I'm following this [commit messages convention](https://github.com/dannyfritz/commit-message-emoji) for my commits.
+4. I tend to organize the styles of my projects with [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/), using [BEM](http://getbem.com/) naming conventions.
+  * I'll keep the `settings`, `tools`, `generic`, `elements`, and `objects` layers on SCSS in the `assets` directory.
+  * Meanwhile, I'll keep the `components` layer on the `pages`, and `components` directories.
+  * I love working with [SCSS](https://sass-lang.com/documentation/syntax). It's an awesome CSS preprocessor, and it helps organizing the ITCSS.
+  * In order to have the `mixins`, and `variables` available on the Vue files I'll use the [@nuxtjs/style-resources](https://github.com/nuxt-community/style-resources-module) plugin.
+5. I based my CSS reboot on the one from [Bootstrap](https://getbootstrap.com/).
+6. I picked `#5524bd` as my brand color. This doesn't have a lot of rationale. My daughter's name is Violet, so I love that color.
+  * I used [Colormind](http://colormind.io/), an online tool, to generate a pallete from my brand color:
+    * `$violet-heart: #5524bd;`
+    * `$daisy-bush: #4c279b;`
+    * `$chesnut-rose: #ce7266;`
+    * `$earls-green: #c6bf36;`
+    * `$sunflower: #e5ce35;`
+  * I prefer to name colors regardless of their functionallity on the code, and I used a [color naming tool](http://chir.ag/projects/name-that-color/) for that.
+7. I decided to use [Lato](https://fonts.google.com/specimen/Lato) font because it scales really well to different sizes, and works beautifully on both headings, and paragraphs.

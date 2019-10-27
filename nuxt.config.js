@@ -14,16 +14,31 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Lato&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#5524bd' },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/styles/main.scss'],
+  /*
+   ** SCSS resources
+   */
+  styleResources: {
+    scss: [
+      'assets/styles/settings/variables.scss',
+      'assets/styles/tools/mixins.scss'
+    ]
+  },
   /*
    ** Plugins to load before mounting the App
    */
@@ -41,7 +56,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Axios module configuration
