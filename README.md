@@ -99,3 +99,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 9. I believe that convention over configuration tends to scale better, therefore all the components are created on a directory with an `index.vue` inside of it.
 10. Components that are meant to be used only once start with the prefix `The`. For instance, `TheHeader`, and `TheFooter`.
 11. I added a little logo I created to just to give a little personality to the application.
+12. I decided to create a new directory on a root level. The directory name is `utils`, and its purpose is to have some JS functions around reusable and available through all the application.
+13. I decided to push the CTAs to the bottom part of the screen for two reasons:
+  * It is more accessible in mobile devices to have the primary actions near the bottom of the device.
+  * Whenever there is a change of screen and the content moves, the CTAs will always remain on the same position. This is only true in this particular demo, because the content of every page is small.
