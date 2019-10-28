@@ -103,3 +103,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 13. I decided to push the CTAs to the bottom part of the screen for two reasons:
   * It is more accessible in mobile devices to have the primary actions near the bottom of the device.
   * Whenever there is a change of screen and the content moves, the CTAs will always remain on the same position. This is only true in this particular demo, because the content of every page is small.
+14. I decided to use [Vuex](https://vuex.vuejs.org/) to handle the state of the application because this will make it really easy to navigate through the application without losing the data.
+15. I added a simple and elegant fade-out/fade-in transition to navigate through pages. This was really simple leveraging NuxtJS super powers.
