@@ -93,3 +93,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
     * `$sunflower: #e5ce35;`
   * I prefer to name colors regardless of their functionallity on the code, and I used a [color naming tool](http://chir.ag/projects/name-that-color/) for that.
 7. I decided to use [Lato](https://fonts.google.com/specimen/Lato) font because it scales really well to different sizes, and works beautifully on both headings, and paragraphs.
+8. I choosed to follow the [app shell pattern](https://developers.google.com/web/fundamentals/architecture/app-shell). This is based on my belief that every web application, specially new ones, should make the following considerations:
+   * Be [mobile-first](https://developers.google.com/search/mobile-sites/mobile-first-indexing).
+   * Be a [PWA](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp).

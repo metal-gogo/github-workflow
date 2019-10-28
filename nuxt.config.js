@@ -56,9 +56,26 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/pwa'
   ],
+  pwa: {
+    manifest: {
+      name: 'Github Workflow',
+      short_name: 'GH-workflow',
+      scope: '/',
+      start_url: '/?uml=homescreen',
+      theme_color: '#5524bd',
+      background_color: '#fcf6f6',
+      lang: 'en',
+      orientation: 'portrait',
+      display: 'standalone'
+    },
+    workbox: {
+      offline: false,
+      offlinePage: '/offline.html'
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
