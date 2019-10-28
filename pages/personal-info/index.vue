@@ -8,18 +8,21 @@
       v-model="firstName"
       label="First name"
       name="firstName"
+      type="text"
     />
     <input-text
       id="lastName"
       v-model="lastName"
       label="Last name"
       name="lastName"
+      type="text"
     />
     <input-text
       id="githubUsername"
       v-model="githubUsername"
       label="Github username"
       name="githubUsername"
+      type="text"
     />
     <steps-control :previous-step="previousStep" :next-step="nextStep" />
   </main>
@@ -47,7 +50,7 @@ export default {
       },
       previousStep: {
         action: () => {
-          this.$router.push('/')
+          this.$router.go(-1)
         },
         isDisabled: false,
         label: 'Introduction'

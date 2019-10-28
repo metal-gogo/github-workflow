@@ -6,7 +6,7 @@
     <input
       :id="id"
       :name="name"
-      type="text"
+      :type="type"
       class="input-text"
       @input="handleInput"
     />
@@ -25,6 +25,10 @@ export default {
       required: true
     },
     name: {
+      type: String,
+      required: true
+    },
+    type: {
       type: String,
       required: true
     },
@@ -52,10 +56,11 @@ export default {
 .input-text__container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .input-text {
+  min-width: 15rem;
   padding: 0 0.5rem;
   border-radius: 6px;
   border-color: $violet-heart;
@@ -65,7 +70,7 @@ export default {
 
   &:focus {
     outline: none;
-    border-color: $daisy-bush;
+    box-shadow: 0 0 0 3px $sunflower;
   }
 
   @include input-placeholder {
