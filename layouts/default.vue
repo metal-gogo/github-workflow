@@ -31,7 +31,7 @@ export default {
 .page-leave-active {
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
 
 .page-enter,

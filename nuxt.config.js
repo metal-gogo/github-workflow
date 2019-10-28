@@ -69,11 +69,7 @@ export default {
       background_color: '#fcf6f6',
       lang: 'en',
       orientation: 'portrait',
-      display: 'standalone'
-    },
-    workbox: {
-      offline: false,
-      offlinePage: '/offline.html'
+      display: 'fullscreen'
     }
   },
   /*

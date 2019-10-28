@@ -20,7 +20,7 @@
         />
       </div>
       <button class="main-cta" @click="handleRestartWorkflow">
-        Explir another Github user
+        Explore another Github user
       </button>
     </div>
   </main>

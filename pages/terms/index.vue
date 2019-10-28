@@ -48,7 +48,7 @@ export default {
           this.$router.push('/github-info')
         },
         isDisabled: true,
-        label: 'Terms'
+        label: 'See Github Info'
       },
       previousStep: {
         action: () => {
