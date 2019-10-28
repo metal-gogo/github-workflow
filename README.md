@@ -10,6 +10,7 @@ In this document you will find a brief documentation on how to run the app, as w
   - [General guidelines](#general-guidelines)
 - [Build Setup](#build-setup)
 - [Decisions made](#decisions-made)
+- [Wrap-up](#wrap-up)
 
 ## Instructions for  the demo
 
@@ -109,3 +110,12 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 15. I added a simple and elegant fade-out/fade-in transition to navigate through pages. This was really simple leveraging NuxtJS super powers.
 16. I used [Axios](https://github.com/axios/axios) to consume the Github API.
 17. I decided to use [Firebase](https://firebase.google.com/) for hosting. It's super easy to use, and it provides a great hosting platform for static web applications.
+
+## Wrap-up
+
+So... My time for this demo is up. If I had more time I would do the following things next:
+
+* Fix PWA module issues.
+* Improve the validations on the forms.
+* Improve the feedback of what could be wrong on the forms.
+* Make sure that every information on the state is mantained and shown on every step.
