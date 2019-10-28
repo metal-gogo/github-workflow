@@ -3,16 +3,38 @@
     <h2>
       Personal information
     </h2>
+    <input-text
+      id="firstName"
+      v-model="firstName"
+      label="First name"
+      name="firstName"
+    />
+    <input-text
+      id="lastName"
+      v-model="lastName"
+      label="Last name"
+      name="lastName"
+    />
+    <input-text
+      id="githubUsername"
+      v-model="githubUsername"
+      label="Github username"
+      name="githubUsername"
+    />
     <steps-control :previous-step="previousStep" :next-step="nextStep" />
   </main>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 import StepsControl from '~/components/StepsControl'
+import InputText from '~/components/InputText'
 
 export default {
   components: {
-    StepsControl
+    StepsControl,
+    InputText
   },
   data() {
     return {
@@ -31,6 +53,36 @@ export default {
         label: 'Introduction'
       }
     }
+  },
+  computed: {
+    firstName: {
+      get() {
+        return this.$store.state.firstName
+      },
+      set(value) {
+        this.$store.commit('updateFirstName', value)
+        this.nextStep.isDisabled = !this.isValidPersonalInfo
+      }
+    },
+    lastName: {
+      get() {
+        return this.$store.state.lastName
+      },
+      set(value) {
+        this.$store.commit('updateLastName', value)
+        this.nextStep.isDisabled = !this.isValidPersonalInfo
+      }
+    },
+    githubUsername: {
+      get() {
+        return this.$store.state.githubUsername
+      },
+      set(value) {
+        this.$store.commit('updateGithubUsername', value)
+        this.nextStep.isDisabled = !this.isValidPersonalInfo
+      }
+    },
+    ...mapGetters(['isValidPersonalInfo'])
   }
 }
 </script>

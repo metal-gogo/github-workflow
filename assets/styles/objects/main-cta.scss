@@ -3,6 +3,7 @@
 
 @include import_once('objects/main-cta') {
   .main-cta {
+    min-width: 8rem;
     padding: 1rem 0.75rem;
     border-radius: 6px;
     border: none;
