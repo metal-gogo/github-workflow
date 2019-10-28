@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h2>
-      Personal information
+      Personal info
     </h2>
     <input-text
       id="firstName"

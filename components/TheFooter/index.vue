@@ -21,9 +21,12 @@ export default {
   margin-top: auto;
   background: $violet-heart;
 }
+
 .the-footer__content {
+  padding: 2rem 1rem;
   align-items: center;
 }
+
 .the-footer__copyleft {
   margin: 0;
   color: $white-smoke;
