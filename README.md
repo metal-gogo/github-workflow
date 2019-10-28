@@ -96,3 +96,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 8. I choosed to follow the [app shell pattern](https://developers.google.com/web/fundamentals/architecture/app-shell). This is based on my belief that every web application, specially new ones, should make the following considerations:
    * Be [mobile-first](https://developers.google.com/search/mobile-sites/mobile-first-indexing).
    * Be a [PWA](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp).
+9. I believe that convention over configuration tends to scale better, therefore all the components are created on a directory with an `index.vue` inside of it.
+10. Components that are meant to be used only once start with the prefix `The`. For instance, `TheHeader`, and `TheFooter`.
+11. I added a little logo I created to just to give a little personality to the application.
