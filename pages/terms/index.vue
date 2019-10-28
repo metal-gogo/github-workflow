@@ -45,7 +45,7 @@ export default {
     return {
       nextStep: {
         action: () => {
-          this.$router.push('/terms')
+          this.$router.push('/github-info')
         },
         isDisabled: true,
         label: 'Terms'
