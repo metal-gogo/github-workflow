@@ -1,7 +1,11 @@
+import validateEmail from '~/utils/validateEmail'
+
 const state = () => ({
   firstName: '',
   lastName: '',
-  githubUsername: ''
+  githubUsername: '',
+  email: '',
+  hasAcceptedTermsAndServices: false
 })
 
 const getters = {
@@ -14,10 +18,19 @@ const getters = {
       state.lastName.length > 0 &&
       state.githubUsername.length > 0
     )
+  },
+  isValidEmail(state) {
+    return validateEmail(state.email)
+  },
+  isValidTermsAndServices(state, getters) {
+    return getters.isValidEmail && state.hasAcceptedTermsAndServices
   }
 }
 
 const mutations = {
+  toggleHasAcceptedTermsAndServices(state) {
+    state.hasAcceptedTermsAndServices = !state.hasAcceptedTermsAndServices
+  },
   updateFirstName(state, firstName) {
     state.firstName = firstName
   },
@@ -26,6 +39,9 @@ const mutations = {
   },
   updateGithubUsername(state, githubUsername) {
     state.githubUsername = githubUsername
+  },
+  updateEmail(state, email) {
+    state.email = email
   }
 }
 
